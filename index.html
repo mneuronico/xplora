@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xplora — Science Snacks</title>
+  <meta name="description" content="Xplora Ciencia — Humor and knowledge to inspire new generations. Science communication through videos, events, and education." />
+  <link rel="icon" href="recursos/logo_no_text.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="recursos/logo_no_text.png" alt="Xplora logo" />
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" data-en="About" data-es="Nosotros">About</a>
+        <a href="#impact" data-en="Impact" data-es="Impacto">Impact</a>
+        <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+        <a href="#events" data-en="Events" data-es="Eventos">Events</a>
+        <a href="#learn-placebo" data-en="Learn" data-es="Aprendé">Learn</a>
+        <a href="#team" data-en="Team" data-es="Equipo">Team</a>
+        <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-option active" data-lang="en">EN</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-option" data-lang="es">ES</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="hero">
+    <!-- Animated particles background -->
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content reveal">
+      <img src="recursos/logo_name.png" alt="Xplora Ciencia" class="hero-logo" />
+      <div class="hero-badge" data-en="Science Communication" data-es="Divulgación Científica">Science Communication</div>
+      <h1 class="hero-title">
+        <span class="hero-word hero-word--magenta">Humor</span>
+        <span class="hero-ampersand">&</span>
+        <span class="hero-word hero-word--cyan" data-en="Knowledge" data-es="Conocimiento">Knowledge</span>
+      </h1>
+      <p class="hero-subtitle" data-en="Inspiring new generations through science, creativity and fun." data-es="Inspirando a nuevas generaciones a través de la ciencia, la creatividad y la diversión.">Inspiring new generations through science, creativity and fun.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-count="166800">0</span>
+          <span class="stat-label" data-en="TikTok Followers" data-es="Seguidores en TikTok">TikTok Followers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="3800000">0</span>
+          <span class="stat-label" data-en="Top Video Views" data-es="Vistas del Top Video">Top Video Views</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="11100">0</span>
+          <span class="stat-label" data-en="YouTube Subscribers" data-es="Suscriptores YouTube">YouTube Subscribers</span>
+        </div>
+      </div>
+      <a href="#about" class="hero-cta" data-en="Explore Our Universe" data-es="Xplorá nuestro universo">Explore Our Universe</a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-en="Who We Are" data-es="Quiénes Somos">Who We Are</span>
+        <h2 class="section-title" data-en="Making science accessible and fun" data-es="Haciendo la ciencia accesible y divertida">Making science accessible and fun</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-en="Xplora Ciencia is a team of science communicators dedicated to making science accessible and fun through social media videos. Founded by Nico Martorell and Benjamín Vidal, the group is made up of biologists, physicists, and professionals from different fields who bring their creativity and humor to explain complex topics." data-es="Xplora Ciencia es un equipo de divulgadores científicos dedicado a hacer la ciencia accesible y divertida a través de videos en redes sociales. Fundado por Nico Martorell y Benjamín Vidal, el grupo está compuesto por biólogos, físicos y profesionales de distintas áreas que aportan su creatividad y humor para explicar temas complejos.">Xplora Ciencia is a team of science communicators dedicated to making science accessible and fun through social media videos. Founded by Nico Martorell and Benjamín Vidal, the group is made up of biologists, physicists, and professionals from different fields who bring their creativity and humor to explain complex topics.</p>
+          <p data-en="One of their milestones was the coverage of the solar eclipse in Las Grutas, highlighting their commitment to science communication. Since 2017, they have been sparking curiosity across Argentina and beyond." data-es="Uno de sus hitos fue la cobertura del eclipse solar en Las Grutas, destacando su compromiso con la divulgación. Desde 2017 vienen despertando curiosidad en Argentina y más allá.">One of their milestones was the coverage of the solar eclipse in Las Grutas, highlighting their commitment to science communication. Since 2017, they have been sparking curiosity across Argentina and beyond.</p>
+        </div>
+        <div class="about-visual reveal">
+          <div class="orbit-system">
+            <div class="orbit-center">
+              <img src="recursos/logo_no_text.png" alt="Xplora" />
+            </div>
+            <div class="orbit-ring orbit-ring--1">
+              <div class="orbit-dot" style="--delay:0s" data-label="Biology"></div>
+              <div class="orbit-dot" style="--delay:1.5s" data-label="Physics"></div>
+            </div>
+            <div class="orbit-ring orbit-ring--2">
+              <div class="orbit-dot" style="--delay:0.5s" data-label="Ecology"></div>
+              <div class="orbit-dot" style="--delay:2s" data-label="Neuro"></div>
+              <div class="orbit-dot" style="--delay:3s" data-label="Tech"></div>
+            </div>
+            <div class="orbit-ring orbit-ring--3">
+              <div class="orbit-dot" style="--delay:1s" data-label="Humor"></div>
+              <div class="orbit-dot" style="--delay:2.5s" data-label="Art"></div>
+              <div class="orbit-dot" style="--delay:3.5s" data-label="Music"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MINIGAME: PLACEBO ======= -->
+  <section class="section learn-slice" id="learn-placebo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-en="Interactive Science" data-es="Ciencia Interactiva">Interactive Science</span>
+        <h2 class="section-title" data-en="The Placebo Effect" data-es="El Efecto Placebo">The Placebo Effect</h2>
+        <p class="section-subtitle" data-en="Drag each statement to the correct category and discover what placebos can (and can't) do." data-es="Arrastrá cada afirmación a la categoría correcta y descubrí qué pueden (y qué no pueden) hacer los placebos.">Drag each statement to the correct category and discover what placebos can (and can't) do.</p>
+      </div>
+      <div class="game-card reveal">
+        <div class="game-header">
+          <h3 data-en="The Placebo Sorter" data-es="El Clasificador de Placebos">The Placebo Sorter</h3>
+          <p class="game-desc" data-en="Drag each statement to the correct category: what placebos CAN do vs what they CAN'T do. Based on real science!" data-es="Arrastrá cada afirmación a la categoría correcta: lo que los placebos PUEDEN hacer vs lo que NO PUEDEN. ¡Basado en ciencia real!">Drag each statement to the correct category: what placebos CAN do vs what they CAN'T do. Based on real science!</p>
+        </div>
+        <div class="placebo-game">
+          <div class="placebo-items" id="placeboItems">
+            <!-- Items will be generated by JS -->
+          </div>
+          <div class="placebo-zones">
+            <div class="drop-zone drop-zone--can" id="zoneCan" data-zone="can">
+              <div class="zone-header zone-header--can">
+                <span class="zone-icon">✅</span>
+                <span data-en="CAN do" data-es="PUEDEN hacer">CAN do</span>
+              </div>
+              <div class="zone-items"></div>
+            </div>
+            <div class="drop-zone drop-zone--cant" id="zoneCant" data-zone="cant">
+              <div class="zone-header zone-header--cant">
+                <span class="zone-icon">❌</span>
+                <span data-en="CAN'T do" data-es="NO PUEDEN">CAN'T do</span>
+              </div>
+              <div class="zone-items"></div>
+            </div>
+          </div>
+        </div>
+        <div class="game-result" id="placeboResult"></div>
+        <button class="game-btn" id="placeboCheck" data-en="Check Answers" data-es="Verificar Respuestas">Check Answers</button>
+        <button class="game-btn game-btn--reset" id="placeboReset" data-en="Reset" data-es="Reiniciar" style="display:none">Reset</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= IMPACT / SOCIAL MEDIA ======= -->
+  <section class="section impact" id="impact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-en="Social Impact" data-es="Impacto Social">Social Impact</span>
+        <h2 class="section-title" data-en="Reaching millions with science" data-es="Alcanzando millones con ciencia">Reaching millions with science</h2>
+      </div>
+
+      <!-- Animated platform cards -->
+      <div class="platform-carousel reveal">
+        <div class="platform-card platform-card--tiktok">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.8a8.24 8.24 0 0 0 3.76.96V6.69z"/></svg>
+          </div>
+          <h3>TikTok</h3>
+          <div class="platform-stats">
+            <div class="platform-stat">
+              <strong>166.8K</strong>
+              <span data-en="Followers" data-es="Seguidores">Followers</span>
+            </div>
+            <div class="platform-stat">
+              <strong>932.3K</strong>
+              <span data-en="Likes" data-es="Me gusta">Likes</span>
+            </div>
+          </div>
+          <a href="https://www.tiktok.com/@xplora.ciencia" target="_blank" rel="noopener" class="platform-link">@xplora.ciencia</a>
+        </div>
+
+        <div class="platform-card platform-card--youtube">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><polygon fill="#fff" points="9.545,15.568 15.818,12 9.545,8.432"/></svg>
+          </div>
+          <h3>YouTube</h3>
+          <div class="platform-stats">
+            <div class="platform-stat">
+              <strong>11.1K</strong>
+              <span data-en="Subscribers" data-es="Suscriptores">Subscribers</span>
+            </div>
+            <div class="platform-stat">
+              <strong>2.38M</strong>
+              <span data-en="Views" data-es="Vistas">Views</span>
+            </div>
+          </div>
+          <a href="https://www.youtube.com/XploraSnacksDeCiencia" target="_blank" rel="noopener" class="platform-link">Xplora - Snacks de Ciencia</a>
+        </div>
+
+        <div class="platform-card platform-card--instagram">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </div>
+          <h3>Instagram</h3>
+          <div class="platform-stats">
+            <div class="platform-stat">
+              <strong>14.8K</strong>
+              <span data-en="Followers" data-es="Seguidores">Followers</span>
+            </div>
+            <div class="platform-stat">
+              <strong>955</strong>
+              <span data-en="Following" data-es="Siguiendo">Following</span>
+            </div>
+          </div>
+          <a href="https://www.instagram.com/xplora.ciencia/" target="_blank" rel="noopener" class="platform-link">@xplora.ciencia</a>
+        </div>
+
+        <div class="platform-card platform-card--twitter">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </div>
+          <h3>X (Twitter)</h3>
+          <div class="platform-stats">
+            <div class="platform-stat">
+              <strong>4,717</strong>
+              <span data-en="Followers" data-es="Seguidores">Followers</span>
+            </div>
+            <div class="platform-stat">
+              <strong>207</strong>
+              <span data-en="Following" data-es="Siguiendo">Following</span>
+            </div>
+          </div>
+          <a href="https://x.com/xplora_ciencia" target="_blank" rel="noopener" class="platform-link">@xplora_ciencia</a>
+        </div>
+
+        <div class="platform-card platform-card--facebook">
+          <div class="platform-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+          <h3>Facebook</h3>
+          <div class="platform-stats">
+            <div class="platform-stat">
+              <strong>914</strong>
+              <span data-en="Followers" data-es="Seguidores">Followers</span>
+            </div>
+          </div>
+          <a href="https://www.facebook.com/xplora.ciencia/" target="_blank" rel="noopener" class="platform-link">xplora.ciencia</a>
+        </div>
+      </div>
+
+      <!-- Viral videos showcase -->
+      <div class="viral-section reveal">
+        <h3 class="viral-title" data-en="Viral Hits" data-es="Éxitos Virales">Viral Hits</h3>
+        <div class="viral-grid">
+          <a href="https://www.tiktok.com/@xplora.ciencia/video/6992781926599789830" target="_blank" rel="noopener" class="viral-card">
+            <div class="viral-views">
+              <span class="viral-count">3.8M</span>
+              <span class="viral-label" data-en="views" data-es="vistas">views</span>
+            </div>
+            <div class="viral-info">
+              <h4 data-en="What is an exponent?" data-es="¿Qué es una potencia?">What is an exponent?</h4>
+              <span class="viral-platform">TikTok</span>
+            </div>
+            <div class="viral-bar" style="--width:100%"></div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=oKVMpi8nWDU" target="_blank" rel="noopener" class="viral-card">
+            <div class="viral-views">
+              <span class="viral-count">384K</span>
+              <span class="viral-label" data-en="views" data-es="vistas">views</span>
+            </div>
+            <div class="viral-info">
+              <h4 data-en="Why isn't Pluto a planet anymore?" data-es="¿Por qué Plutón ya no es un planeta?">Why isn't Pluto a planet anymore?</h4>
+              <span class="viral-platform">YouTube</span>
+            </div>
+            <div class="viral-bar" style="--width:10%"></div>
+          </a>
+          <div class="viral-card viral-card--static">
+            <div class="viral-views">
+              <span class="viral-count">691K</span>
+              <span class="viral-label" data-en="views" data-es="vistas">views</span>
+            </div>
+            <div class="viral-info">
+              <h4 data-en="Dimensions and Functions" data-es="Dimensiones y funciones">Dimensions and Functions</h4>
+              <span class="viral-platform">TikTok</span>
+            </div>
+            <div class="viral-bar" style="--width:18%"></div>
+          </div>
+          <div class="viral-card viral-card--static">
+            <div class="viral-views">
+              <span class="viral-count">200K+</span>
+              <span class="viral-label" data-en="views" data-es="vistas">views</span>
+            </div>
+            <div class="viral-info">
+              <h4 data-en="What is acoustics?" data-es="¿Qué es la acústica?">What is acoustics?</h4>
+              <span class="viral-platform">TikTok</span>
+            </div>
+            <div class="viral-bar" style="--width:5.3%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MINIGAME: TETANUS ======= -->
+  <section class="section learn-slice" id="learn-tetanus">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-en="Interactive Science" data-es="Ciencia Interactiva">Interactive Science</span>
+        <h2 class="section-title" data-en="Tetanus Myths" data-es="Mitos del Tétanos">Tetanus Myths</h2>
+        <p class="section-subtitle" data-en="Sort each claim as fact or fiction and learn how the tetanus bacteria really works." data-es="Clasificá cada afirmación como verdadera o falsa y aprendé cómo funciona realmente la bacteria del tétanos.">Sort each claim as fact or fiction and learn how the tetanus bacteria really works.</p>
+      </div>
+      <div class="game-card reveal">
+        <div class="game-header">
+          <h3 data-en="Tetanus: Fact or Fiction?" data-es="Tétanos: ¿Verdadero o Falso?">Tetanus: Fact or Fiction?</h3>
+          <p class="game-desc" data-en="Swipe or click to sort each claim as true or false. Can you debunk the rust myth?" data-es="Deslizá o hacé clic para clasificar cada afirmación como verdadera o falsa. ¿Podés desmentir el mito del óxido?">Swipe or click to sort each claim as true or false. Can you debunk the rust myth?</p>
+        </div>
+        <div class="tetanus-game" id="tetanusGame">
+          <div class="tetanus-card-stack" id="tetanusStack">
+            <!-- Cards generated by JS -->
+          </div>
+          <div class="tetanus-buttons">
+            <button class="tetanus-btn tetanus-btn--false" id="tetFalse">
+              <span>✗</span>
+              <span data-en="Fiction" data-es="Falso">Fiction</span>
+            </button>
+            <button class="tetanus-btn tetanus-btn--true" id="tetTrue">
+              <span>✓</span>
+              <span data-en="Fact" data-es="Verdadero">Fact</span>
+            </button>
+          </div>
+        </div>
+        <div class="tetanus-score" id="tetanusScore"></div>
+        <div class="tetanus-feedback" id="tetanusFeedback"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROJECTS ======= -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-en="What We Do" data-es="Lo Que Hacemos">What We Do</span>
+        <h2 class="section-title" data-en="Projects & Collaborations" data-es="Proyectos y Colaboraciones">Projects &amp; Collaborations</h2>
+      </div>
+
+      <div class="projects-timeline">
+
+        <!-- SS3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--magenta"></div>
+          <div class="timeline-content">
+            <div class="project-card project-card--featured">
+              <div class="project-media">
+                <iframe src="https://www.youtube.com/embed/rbCAvtCYdIY" title="SS3" loading="lazy" allowfullscreen></iframe>
+              </div>
+              <div class="project-body">
+                <span class="project-tag" data-en="Animated Series" data-es="Serie Animada">Animated Series</span>
+                <h3>SS3</h3>
+                <p data-en="An animated series created by Xplora Ciencia and broadcast on Canal Encuentro. The plot follows a group of aliens who investigate human behavior from a humorous and educational perspective. The script and animation are entirely produced by the Xplora team." data-es="Una serie animada creada por Xplora Ciencia y emitida en el canal Encuentro. La trama sigue a un grupo de alienígenas que investigan el comportamiento humano desde una perspectiva humorística y educativa. El guion y la animación están a cargo del equipo de Xplora.">An animated series created by Xplora Ciencia and broadcast on Canal Encuentro. The plot follows a group of aliens who investigate human behavior from a humorous and educational perspective. The script and animation are entirely produced by the Xplora team.</p>
+                <a href="https://www.youtube.com/watch?v=rbCAvtCYdIY&list=PLI9AL8-ghGldit2KrzhMt-H4hrBdusjuR" target="_blank" rel="noopener" class="project-link" data-en="Watch Episodes" data-es="Ver Episodios">Watch Episodes →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- C5N -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--cyan"></div>
+          <div class="timeline-content">
+            <div class="project-card">
+              <div class="project-body">
+                <span class="project-tag" data-en="Media Partnership" data-es="Alianza de Medios">Media Partnership</span>
+                <h3>C5N</h3>
+                <p data-en="For one year, Xplora Ciencia was a content provider for C5N's social media, creating science communication videos with their signature style. This collaboration allowed them to reach a wider audience and establish themselves as leading science communicators." data-es="Durante un año, Xplora Ciencia fue proveedor de contenido para las redes sociales de C5N, creando videos de divulgación científica con su estilo característico. Esta colaboración les permitió llegar a un público más amplio y consolidarse como referentes en la comunicación científica.">For one year, Xplora Ciencia was a content provider for C5N's social media, creating science communication videos with their signature style. This collaboration allowed them to reach a wider audience and establish themselves as leading science communicators.</p>
+                <a href="https://www.facebook.com/watch/?v=512612383686836" target="_blank" rel="noopener" class="project-link" data-en="Watch on Facebook" data-es="Ver en Facebook">Watch on Facebook →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CienciaxContar -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--yellow"></div>
+          <div class="timeline-content">
+            <div class="project-card">
+              <div class="project-body">
+                <span class="project-tag" data-en="Government Recognition" data-es="Reconocimiento Gubernamental">Government Recognition</span>
+                <h3>CienciaxContar</h3>
+                <p data-en="Xplora Ciencia was recognized by Argentina's Ministry of Science through the CienciaxContar initiative, a science communication contest that awards the best projects. This recognition validates their creative approach and their commitment to education and knowledge sharing." data-es="Xplora Ciencia fue reconocido por el Ministerio de Ciencia en la iniciativa CienciaxContar, un concurso de divulgación científica que premia a los mejores proyectos. Este reconocimiento valida su enfoque creativo y su compromiso con la educación y la difusión del conocimiento.">Xplora Ciencia was recognized by Argentina's Ministry of Science through the CienciaxContar initiative, a science communication contest that awards the best projects. This recognition validates their creative approach and their commitment to education and knowledge sharing.</p>
+                <a href="https://www.argentina.gob.ar/noticias/ciencia-por-contar-se-anunciaron-los-proyectos-ganadores-del-concurso-de-comunicacion" target="_blank" rel="noopener" class="project-link" data-en="Read More" data-es="Leer Más">Read More →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Xplora Academy -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--magenta"></div>
+          <div class="timeline-content">
+            <div class="project-card">
+              <div class="project-media">
+                <iframe src="https://www.youtube.com/embed/SshCYrGJC0U" title="Xplora Academy" loading="lazy" allowfullscreen></iframe>
+              </div>
+              <div class="project-body">
+                <span class="project-tag" data-en="Education" data-es="Educación">Education</span>
+                <h3>Xplora Academy</h3>
+                <p data-en="An educational platform offering fun talks and courses on programming, artificial intelligence, virtual reality, and ecology. With a dynamic and accessible approach, they bring scientific knowledge to new generations, inspiring curiosity and fostering continuous learning." data-es="Una plataforma educativa que ofrece charlas y cursos entretenidos sobre programación, inteligencia artificial, realidad virtual y ecología. Con un enfoque dinámico y accesible, buscan llevar el conocimiento científico a nuevas generaciones, inspirando curiosidad y fomentando el aprendizaje continuo.">An educational platform offering fun talks and courses on programming, artificial intelligence, virtual reality, and ecology. With a dynamic and accessible approach, they bring scientific knowledge to new generations, inspiring curiosity and fostering continuous learning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Xplodcast -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--cyan"></div>
+          <div class="timeline-content">
+            <div class="project-card">
+              <div class="project-body">
+                <span class="project-tag">Podcast</span>
+                <h3>Xplodcast</h3>
+                <p data-en="Xplora's podcast where they explore science topics in an entertaining and audience-friendly way. Through dynamic conversations and simple explanations, the team answers questions and debates about the most intriguing topics in current science." data-es="El podcast de Xplora Ciencia, donde exploran temas científicos de manera entretenida y cercana al público. A través de charlas dinámicas y explicaciones sencillas, el equipo responde preguntas y debate sobre los temas más intrigantes de la ciencia actual.">Xplora's podcast where they explore science topics in an entertaining and audience-friendly way. Through dynamic conversations and simple explanations, the team answers questions and debates about the most intriguing topics in current science.</p>
+                <div class="project-links-row">
+                  <a href="https://www.youtube.com/watch?v=Qha1wmtjvMA" target="_blank" rel="noopener" class="project-link">YouTube →</a>
+                  <a href="https://open.spotify.com/show/1ybGcbAI3PxuGMSbMc4N5g" target="_blank" rel="noopener" class="project-link project-link--spotify">Spotify →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Xplora Trips -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--yellow"></div>
+          <div class="timeline-content">
+            <div class="project-card">
+              <div class="project-body">
+                <span class="project-tag" data-en="Science Travel" data-es="Viajes Científicos">Science Travel</span>
+                <h3>Xplora Trips</h3>
+                <p data-en="Scientific travel experiences organized by Xplora Ciencia. Destinations include San Juan (CASLEO Observatory at Parque El Leoncito) and Lobos (astrotourism collaboration with Ezequiel Brahim), connecting science and adventure." data-es="Experiencias de viajes científicos organizadas por Xplora Ciencia. Los destinos incluyen San Juan (Observatorio CASLEO en el Parque El Leoncito) y Lobos (colaboración de astroturismo con Ezequiel Brahim), conectando ciencia y aventura.">Scientific travel experiences organized by Xplora Ciencia. Destinations include San Juan (CASLEO Observatory at Parque El Leoncito) and Lobos (astrotourism collaboration with Ezequiel Brahim), connecting science and adventure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Xplora Xperimenta -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--magenta"></div>
+          <div class="timeline-content">
+            <div class="project-card">
+              <div class="project-body">
+                <span class="project-tag" data-en="Interactive Series" data-es="Serie Interactiva">Interactive Series</span>
+                <h3>Xplora Xperimenta</h3>
+                <p data-en="An interactive series where the team performs science experiments in a simple and fun way. Through this initiative, they encourage the audience to participate and better understand how scientific concepts work through hands-on experimentation." data-es="Una serie interactiva donde realizan experimentos científicos de forma sencilla y divertida. A través de esta iniciativa, buscan que la audiencia participe y comprenda mejor cómo funcionan los conceptos científicos a través de la experimentación directa.">An interactive series where the team performs science experiments in a simple and fun way. Through this initiative, they encourage the audience to participate and better understand how scientific concepts work through hands-on experimentation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Science News -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--cyan"></div>
+          <div class="timeline-content">
+            <div class="project-card">
+              <div class="project-body">
+                <span class="project-tag" data-en="Weekly Show" data-es="Show Semanal">Weekly Show</span>
+                <h3 data-en="Science News" data-es="Noticias de Ciencia">Science News</h3>
+                <p data-en="Every week, Nico Martorell delivers a summary of the most relevant science news. With his dynamic and entertaining style, he keeps the audience informed about the latest advances and discoveries, bringing science closer to everyday life." data-es="Cada semana, Nico Martorell presenta un resumen de las noticias más relevantes en el mundo de la ciencia. Con su estilo dinámico y entretenido, mantiene al público informado sobre los últimos avances y descubrimientos, acercando la ciencia al día a día de la audiencia.">Every week, Nico Martorell delivers a summary of the most relevant science news. With his dynamic and entertaining style, he keeps the audience informed about the latest advances and discoveries, bringing science closer to everyday life.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trivias -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--yellow"></div>
+          <div class="timeline-content">
+            <div class="project-card">
+              <div class="project-body">
+                <span class="project-tag" data-en="Interactive Content" data-es="Contenido Interactivo">Interactive Content</span>
+                <h3 data-en="Science Trivia" data-es="Trivias de Ciencia">Science Trivia</h3>
+                <p data-en="Benjamín Vidal leads Xplora's science trivia segments, challenging the audience to answer questions on scientific topics. These trivia sessions combine fun and learning as an interactive way to foster curiosity and knowledge among their followers." data-es="Benjamín Vidal lidera las trivias de ciencia de Xplora, donde desafían al público a responder preguntas sobre temas científicos. Estas trivias combinan diversión y aprendizaje como una forma interactiva de fomentar la curiosidad y el conocimiento entre sus seguidores.">Benjamín Vidal leads Xplora's science trivia segments, challenging the audience to answer questions on scientific topics. These trivia sessions combine fun and learning as an interactive way to foster curiosity and knowledge among their followers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interviews -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--magenta"></div>
+          <div class="timeline-content">
+            <div class="project-card">
+              <div class="project-body">
+                <span class="project-tag" data-en="Interviews" data-es="Entrevistas">Interviews</span>
+                <h3 data-en="Researcher Interviews" data-es="Entrevistas a Investigadores">Researcher Interviews</h3>
+                <p data-en="Xplora Ciencia has interviewed numerous researchers, primarily from the Faculty of Exact Sciences, aiming to share their research in an accessible and entertaining way. These interviews allow the public to learn about scientific advances in various fields and the importance of science in everyday life." data-es="Xplora Ciencia ha entrevistado a diversos investigadores, principalmente de la Facultad de Ciencias Exactas, con el objetivo de divulgar sus investigaciones de una manera accesible y entretenida. Estas entrevistas permiten al público conocer de cerca los avances científicos en distintas áreas y la importancia de la ciencia en la vida cotidiana.">Xplora Ciencia has interviewed numerous researchers, primarily from the Faculty of Exact Sciences, aiming to share their research in an accessible and entertaining way. These interviews allow the public to learn about scientific advances in various fields and the importance of science in everyday life.</p>
+                <a href="https://www.youtube.com/watch?v=j2Yq7lKWgpc" target="_blank" rel="noopener" class="project-link" data-en="Watch Interview" data-es="Ver Entrevista">Watch Interview →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collaborations section heading -->
+        <div class="timeline-divider reveal">
+          <h3 data-en="Collaborations" data-es="Colaboraciones">Collaborations</h3>
+        </div>
+
+        <!-- Psicopsimple -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--cyan"></div>
+          <div class="timeline-content">
+            <div class="project-card project-card--collab">
+              <div class="project-body">
+                <span class="project-tag" data-en="Collaboration" data-es="Colaboración">Collaboration</span>
+                <h3>Psicosimple</h3>
+                <p data-en="In collaboration with Psicosimple, Xplora created explainer videos about psychological concepts like maladaptive perfectionism, impostor syndrome, and the comfort zone. These videos combine science and psychology, offering relevant content for the general audience." data-es="En colaboración con Psicosimple, Xplora creó videos explicativos sobre conceptos psicológicos como el perfeccionismo desadaptativo, el síndrome del impostor y la zona de confort. Estos videos combinan ciencia y psicología, ofreciendo contenido relevante para el público general.">In collaboration with Psicosimple, Xplora created explainer videos about psychological concepts like maladaptive perfectionism, impostor syndrome, and the comfort zone. These videos combine science and psychology, offering relevant content for the general audience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flor Rocca -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--yellow"></div>
+          <div class="timeline-content">
+            <div class="project-card project-card--collab">
+              <div class="project-body">
+                <span class="project-tag" data-en="Environment" data-es="Medio Ambiente">Environment</span>
+                <h3>Flor Rocca</h3>
+                <p data-en="Xplora worked with activist Flor Rocca to create videos on environmental issues, including '3 reasons to protect the environment.' Through this content, they promoted ecological awareness and the importance of individual actions to protect the planet." data-es="Xplora trabajó junto a la activista Flor Rocca en la creación de videos sobre medio ambiente, destacando '3 razones para cuidar el medio ambiente'. Con este contenido, promovieron la conciencia ecológica y la importancia de las acciones individuales para proteger el planeta.">Xplora worked with activist Flor Rocca to create videos on environmental issues, including "3 reasons to protect the environment." Through this content, they promoted ecological awareness and the importance of individual actions to protect the planet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pandemic -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--magenta"></div>
+          <div class="timeline-content">
+            <div class="project-card project-card--collab">
+              <div class="project-body">
+                <span class="project-tag" data-en="Public Health" data-es="Salud Pública">Public Health</span>
+                <h3 data-en="COVID-19 Awareness" data-es="Concientización COVID-19">COVID-19 Awareness</h3>
+                <p data-en="During the COVID-19 pandemic, Xplora collaborated with scientist Nadia Chiaramoni to produce a series of awareness videos. Through informative content, they helped spread preventive measures and recommendations based on scientific evidence." data-es="Durante la pandemia de COVID-19, Xplora Ciencia colaboró con la científica Nadia Chiaramoni para producir una serie de videos de concientización. A través de contenido informativo, ayudaron a difundir medidas preventivas y recomendaciones basadas en evidencia científica.">During the COVID-19 pandemic, Xplora collaborated with scientist Nadia Chiaramoni to produce a series of awareness videos. Through informative content, they helped spread preventive measures and recommendations based on scientific evidence.</p>
+                <a href="https://www.youtube.com/watch?v=D0pXU3hqmLk" target="_blank" rel="noopener" class="project-link" data-en="Watch Video" data-es="Ver Video">Watch Video →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Streaming -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--cyan"></div>
+          <div class="timeline-content">
+            <div class="project-card project-card--collab">
+              <div class="project-body">
+                <span class="project-tag">Streaming</span>
+                <h3>Tomatelo con Ciencia</h3>
+                <p data-en="The Xplora team participated in the 'Tomatelo con Ciencia' stream, a space where scientific topics are discussed with a relaxed and humorous tone, connecting science with entertainment." data-es="El equipo de Xplora participó en el stream 'Tomatelo con Ciencia', un espacio donde se abordan temas científicos con un tono relajado y humorístico, conectando la ciencia con el entretenimiento.">The Xplora team participated in the "Tomatelo con Ciencia" stream, a space where scientific topics are discussed with a relaxed and humorous tone, connecting science with entertainment.</p>
+                <a href="https://www.youtube.com/watch?v=oOo5nJl3mzM" target="_blank" rel="noopener" class="project-link" data-en="Watch Stream" data-es="Ver Stream">Watch Stream →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Radio Disney -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--yellow"></div>
+          <div class="timeline-content">
+            <div class="project-card project-card--collab">
+              <div class="project-body">
+                <span class="project-tag">Radio</span>
+                <h3>Radio Disney</h3>
+                <p data-en="Juan Manuel Cafferata and Lucha Salgueiro participated in Radio Disney podcasts dedicated to the films Avatar and Wall·E, offering cultural analysis from a science, ecology, and technology perspective, reflecting on the environmental and technological messages these films convey." data-es="Juan Manuel Cafferata y Lucha Salgueiro participaron en los podcasts de Radio Disney dedicados a las películas Avatar y Wall·E, aportando análisis cultural desde la ciencia, ecología y tecnología, ofreciendo una reflexión sobre los mensajes medioambientales y tecnológicos que estas películas transmiten.">Juan Manuel Cafferata and Lucha Salgueiro participated in Radio Disney podcasts dedicated to the films Avatar and Wall·E, offering cultural analysis from a science, ecology, and technology perspective, reflecting on the environmental and technological messages these films convey.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TV Pública -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--magenta"></div>
+          <div class="timeline-content">
+            <div class="project-card project-card--collab">
+              <div class="project-media">
+                <iframe src="https://www.youtube.com/embed/HUmtmL2lmOc" title="La Liga de la Ciencia" loading="lazy" allowfullscreen></iframe>
+              </div>
+              <div class="project-body">
+                <span class="project-tag" data-en="Television" data-es="Televisión">Television</span>
+                <h3>TV Pública — La Liga de la Ciencia</h3>
+                <p data-en="Juan Manuel Cafferata and Julieta Varona were guests on 'La Liga de la Ciencia,' hosted by Andrés Rieznik and María Eugenia López on Argentina's public TV. They shared their experience as science communicators and how Xplora combines entertainment and science to make knowledge accessible and fun." data-es="Juan Manuel Cafferata y Julieta Varona participaron como invitados en 'La Liga de la Ciencia', conducido por Andrés Rieznik y María Eugenia López en la TV Pública. Compartieron su experiencia como divulgadores y cómo Xplora combina entretenimiento y ciencia para hacer el conocimiento accesible y divertido.">Juan Manuel Cafferata and Julieta Varona were guests on "La Liga de la Ciencia," hosted by Andrés Rieznik and María Eugenia López on Argentina's public TV. They shared their experience as science communicators and how Xplora combines entertainment and science to make knowledge accessible and fun.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MINIGAME: P-VALUE ======= -->
+  <section class="section learn-slice" id="learn-pvalue">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-en="Interactive Science" data-es="Ciencia Interactiva">Interactive Science</span>
+        <h2 class="section-title" data-en="P-Value Lab" data-es="Laboratorio del P-Valor">P-Value Lab</h2>
+        <p class="section-subtitle" data-en="Run experiments and discover how false positives appear when you test enough times." data-es="Corré experimentos y descubrí cómo aparecen falsos positivos cuando se prueban suficientes veces.">Run experiments and discover how false positives appear when you test enough times.</p>
+      </div>
+      <div class="game-card reveal">
+        <div class="game-header">
+          <h3 data-en="P-Value Simulator" data-es="Simulador de P-Valor">P-Value Simulator</h3>
+          <p class="game-desc" data-en="Run experiments and see how the p-value threshold of 0.05 can lead to false positives. Click 'Run Experiment' to simulate 20 independent studies and see how many pass just by chance!" data-es="Corré experimentos y observá cómo el umbral de p-valor de 0.05 puede llevar a falsos positivos. ¡Hacé clic en 'Correr Experimento' para simular 20 estudios independientes y ver cuántos pasan solo por azar!">Run experiments and see how the p-value threshold of 0.05 can lead to false positives. Click 'Run Experiment' to simulate 20 independent studies and see how many pass just by chance!</p>
+        </div>
+        <div class="pvalue-game">
+          <div class="pvalue-controls">
+            <button class="game-btn" id="pvalueRun" data-en="Run 20 Experiments" data-es="Correr 20 Experimentos">Run 20 Experiments</button>
+            <button class="game-btn game-btn--reset" id="pvalueReset" data-en="Reset" data-es="Reiniciar">Reset</button>
+          </div>
+          <div class="pvalue-threshold">
+            <span data-en="Significance threshold:" data-es="Umbral de significancia:">Significance threshold:</span>
+            <strong>p &lt; 0.05</strong>
+          </div>
+          <div class="pvalue-grid" id="pvalueGrid">
+            <!-- 20 experiment slots -->
+          </div>
+          <div class="pvalue-summary" id="pvalueSummary"></div>
+          <div class="pvalue-insight" id="pvalueInsight"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EVENTS ======= -->
+  <section class="section events" id="events">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-en="Live Experiences" data-es="Experiencias en Vivo">Live Experiences</span>
+        <h2 class="section-title" data-en="Events & Live Shows" data-es="Eventos y Shows en Vivo">Events &amp; Live Shows</h2>
+      </div>
+
+      <div class="events-mosaic">
+        <div class="event-card event-card--large reveal">
+          <div class="event-image" style="background-image:url('https://cdn.prod.website-files.com/62e2e71beda91e786542f0de/66db9973f87a945d061f2dd0_66db9401185f32d46e58293a_cienciapallooza.jpeg')"></div>
+          <div class="event-overlay">
+            <span class="event-tag" data-en="Science Festival" data-es="Festival de Ciencia">Science Festival</span>
+            <h3>Cienciapallooza</h3>
+            <p data-en="Two editions in La Matanza, bringing science to public plazas with hands-on experiments, sensory activities, and microscope observations — connecting playfully with the community." data-es="Dos ediciones en La Matanza, llevando la ciencia a las plazas con experimentos, actividades sensoriales y observaciones en microscopio — conectando de manera lúdica con la comunidad.">Two editions in La Matanza, bringing science to public plazas with hands-on experiments, sensory activities, and microscope observations — connecting playfully with the community.</p>
+          </div>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-image" style="background-image:url('https://cdn.prod.website-files.com/62e2e71beda91e786542f0de/66db9973f87a945d061f2dcc_66db92de85b747dfed4ffe82_pint.jpeg')"></div>
+          <div class="event-overlay">
+            <span class="event-tag">Pint of Science</span>
+            <h3 data-en="3 Editions" data-es="3 Ediciones">3 Editions</h3>
+            <p data-en="Science presentations in bars, making knowledge accessible through humor and a relaxed atmosphere." data-es="Presentaciones científicas en bares, acercando el conocimiento con humor y un ambiente relajado.">Science presentations in bars, making knowledge accessible through humor and a relaxed atmosphere.</p>
+          </div>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-overlay event-overlay--solid event-overlay--magenta">
+            <span class="event-tag" data-en="Panel" data-es="Panel">Panel</span>
+            <h3>Ciencia y Vinito</h3>
+            <p data-en="Panel with Fabricio Ballarini and Flor Labombarda at Dot Baires Shopping — science communication meets wine and good conversation." data-es="Panel con Fabricio Ballarini y Flor Labombarda en Dot Baires Shopping — divulgación científica con vino y buena conversación.">Panel with Fabricio Ballarini and Flor Labombarda at Dot Baires Shopping — science communication meets wine and good conversation.</p>
+          </div>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-overlay event-overlay--solid event-overlay--cyan">
+            <span class="event-tag">Podcast</span>
+            <h3>Mamarracho</h3>
+            <p data-en="Live podcast at Mamarracho, answering audience questions while Palta y Maracuyá played folk music — the perfect fusion of science, humor, and art." data-es="Podcast en vivo en Mamarracho, respondiendo preguntas del público mientras Palta y Maracuyá tocaba música folk — la fusión perfecta de ciencia, humor y arte.">Live podcast at Mamarracho, answering audience questions while Palta y Maracuyá played folk music — the perfect fusion of science, humor, and art.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MINIGAME: UMAMI ======= -->
+  <section class="section learn-slice" id="learn-umami">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-en="Interactive Science" data-es="Ciencia Interactiva">Interactive Science</span>
+        <h2 class="section-title" data-en="Umami Quest" data-es="Búsqueda Umami">Umami Quest</h2>
+        <p class="section-subtitle" data-en="Combine foods and unlock the synergy that makes flavors explode." data-es="Combiná alimentos y desbloqueá la sinergia que hace explotar los sabores.">Combine foods and unlock the synergy that makes flavors explode.</p>
+      </div>
+      <div class="game-card reveal">
+        <div class="game-header">
+          <h3 data-en="The Umami Kitchen" data-es="La Cocina Umami">The Umami Kitchen</h3>
+          <p class="game-desc" data-en="Click on foods to add them to your plate. Combine umami-rich ingredients and discover the synergy effect — some combinations amplify flavor far beyond the sum of their parts!" data-es="Hacé clic en los alimentos para agregarlos a tu plato. Combiná ingredientes ricos en umami y descubrí el efecto sinergia — ¡algunas combinaciones amplifican el sabor mucho más que la suma de sus partes!">Click on foods to add them to your plate. Combine umami-rich ingredients and discover the synergy effect — some combinations amplify flavor far beyond the sum of their parts!</p>
+        </div>
+        <div class="umami-game">
+          <div class="umami-foods" id="umamiFoods">
+            <!-- Food items generated by JS -->
+          </div>
+          <div class="umami-plate-area">
+            <div class="umami-plate" id="umamiPlate">
+              <span class="plate-label" data-en="Your Plate" data-es="Tu Plato">Your Plate</span>
+            </div>
+            <div class="umami-meter">
+              <div class="meter-label" data-en="Umami Level" data-es="Nivel Umami">Umami Level</div>
+              <div class="meter-bar">
+                <div class="meter-fill" id="umamiFill"></div>
+              </div>
+              <div class="meter-value" id="umamiValue">0</div>
+            </div>
+            <div class="umami-synergy" id="umamiSynergy"></div>
+          </div>
+          <button class="game-btn game-btn--reset" id="umamiReset" data-en="Clear Plate" data-es="Limpiar Plato">Clear Plate</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TEAM ======= -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-en="The Crew" data-es="El Equipo">The Crew</span>
+        <h2 class="section-title" data-en="Meet the Team" data-es="Conocé al equipo">Meet the Team</h2>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card reveal" style="--accent:var(--magenta)">
+          <div class="team-photo">
+            <img src="fotos/Santi.png" alt="Santiago Tejeiro" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <h3>Santiago Tejeiro</h3>
+          <span class="team-role" data-en="Irreverent Voice-over" data-es="Locutor Irreverente">Irreverent Voice-over</span>
+        </div>
+
+        <div class="team-card reveal" style="--accent:var(--cyan)">
+          <div class="team-photo">
+            <img src="fotos/Nico.png" alt="Nicolás Martorell" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <h3>Nicolás Martorell</h3>
+          <span class="team-role" data-en="Lead Programmer" data-es="Programador Destacado">Lead Programmer</span>
+        </div>
+
+        <div class="team-card reveal" style="--accent:var(--yellow)">
+          <div class="team-photo">
+            <img src="fotos/Benja.png" alt="Benjamín Vidal" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <h3>Benjamín Vidal</h3>
+          <span class="team-role" data-en="Science Comedian" data-es="Humorista Científico">Science Comedian</span>
+        </div>
+
+        <div class="team-card reveal" style="--accent:var(--magenta)">
+          <div class="team-photo">
+            <img src="fotos/Lucha.png" alt="Luciana Salgueiro" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <h3>Luciana Salgueiro</h3>
+          <span class="team-role" data-en="Environmental Education Lead" data-es="Líder en Educación Ambiental">Environmental Education Lead</span>
+        </div>
+
+        <div class="team-card reveal" style="--accent:var(--cyan)">
+          <div class="team-photo">
+            <img src="fotos/JM.png" alt="Juan Manuel Cafferata" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <h3>Juan Manuel Cafferata</h3>
+          <span class="team-role" data-en="Developer" data-es="Desarrollador">Developer</span>
+        </div>
+
+        <div class="team-card reveal" style="--accent:var(--yellow)">
+          <div class="team-photo">
+            <img src="fotos/Juli.png" alt="Julieta Varona" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <h3>Julieta Varona</h3>
+          <span class="team-role" data-en="Science & Empathy" data-es="Ciencia y Empatía">Science &amp; Empathy</span>
+        </div>
+
+        <div class="team-card reveal" style="--accent:var(--magenta)">
+          <div class="team-photo">
+            <img src="fotos/Lucio.png" alt="Lucio García" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <h3>Lucio García</h3>
+          <span class="team-role" data-en="Physics & Pop Culture" data-es="Física y Cultura Pop">Physics &amp; Pop Culture</span>
+        </div>
+
+        <div class="team-card reveal" style="--accent:var(--cyan)">
+          <div class="team-photo">
+            <img src="fotos/Vale.png" alt="Valeria Tubert" loading="lazy" />
+            <div class="team-glow"></div>
+          </div>
+          <h3>Valeria Tubert</h3>
+          <span class="team-role" data-en="Musician" data-es="Música">Musician</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT / FOOTER ======= -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-top reveal">
+        <div class="footer-brand">
+          <img src="recursos/logo_name.png" alt="Xplora" class="footer-logo" />
+          <p data-en="Humor and knowledge to inspire new generations." data-es="Humor y conocimiento para inspirar a nuevas generaciones.">Humor and knowledge to inspire new generations.</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/@xplora.ciencia" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.8a8.24 8.24 0 0 0 3.76.96V6.69z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/XploraSnacksDeCiencia" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><polygon fill="#282828" points="9.545,15.568 15.818,12 9.545,8.432"/></svg>
+          </a>
+          <a href="https://www.instagram.com/xplora.ciencia/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="https://x.com/xplora_ciencia" target="_blank" rel="noopener" aria-label="X/Twitter" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/xplora.ciencia/" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://open.spotify.com/show/1ybGcbAI3PxuGMSbMc4N5g" target="_blank" rel="noopener" aria-label="Spotify" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="mailto:xplora.prod@gmail.com" class="footer-email">xplora.prod@gmail.com</a>
+          <a href="https://cafecito.app/xplora_ciencia" target="_blank" rel="noopener" class="footer-cafecito" data-en="Buy us a coffee ☕" data-es="Invitanos un cafecito ☕">Buy us a coffee ☕</a>
+        </div>
+        <p class="footer-copy" data-en="© 2026 Xplora Ciencia. Sparking curiosity since 2017. Buenos Aires, Argentina." data-es="© 2026 Xplora Ciencia. Despertando curiosidad desde 2017. Buenos Aires, Argentina.">© 2026 Xplora Ciencia. Sparking curiosity since 2017. Buenos Aires, Argentina.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
