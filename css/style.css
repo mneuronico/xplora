@@ -659,6 +659,7 @@ button {
 }
 
 .platform-card {
+  display: block;
   background: var(--bg-card);
   border-radius: 20px;
   padding: 32px 24px;
@@ -667,6 +668,8 @@ button {
   transition: transform 0.4s var(--ease-spring), border-color 0.4s, box-shadow 0.4s;
   position: relative;
   overflow: hidden;
+  color: inherit;
+  text-decoration: none;
 }
 
 .platform-card::before {
@@ -752,8 +755,13 @@ button {
   transition: color 0.3s;
 }
 
-.platform-link:hover {
+.platform-card:hover .platform-link {
   color: var(--cyan);
+}
+
+.platform-card:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
 }
 
 /* Viral Videos */
